@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { BACKEND_URL } from "../../utils/utils";
 
 function Detail() {
   const { id } = useParams();
@@ -10,7 +11,7 @@ function Detail() {
     const fetchblogs = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:4001/api/blogs/single-blog/${id}`,
+          `${BACKEND_URL}/blogs/single-blog/${id}`,
 
           {
             withCredentials: true,

@@ -1,0 +1,1 @@
+export const BACKEND_URL ="https://blogapp-nheu.onrender.com/api"
