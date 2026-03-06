@@ -32,9 +32,7 @@ app.use( fileUpload({
   })
 );
 
-app.get("/", (req,res) => {
-    res.send("hello")
-})
+
 
 //routes defining
 app.use("/api/users", userRoute)
